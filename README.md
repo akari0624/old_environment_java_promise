@@ -44,7 +44,7 @@ ListenableFuture<Integer> aFuture = AsyncWorkService.getInstance().sendWorkToBac
 ```
 ###  範例：
 1. 執行40個任務，放進執行緒池裡並行(concurrently)執行，在最後等所有任務執行完，當中可能有些任務會是失敗的，取得所有任務的執行結果
-  - 因為40個任務超過了本Library裡執行緒池的最大數量(15)，所以可以藉此觀察`ExecutorSerice`是如何處理這樣的情形
+    - 因為40個任務超過了本Library裡執行緒池的最大數量(15)，所以可以藉此觀察`ExecutorSerice`是如何處理這樣的情形
 
 2. 執行一個並行任務，做完第一個非同步操作後，再接著進行下一個，然後取得最後的執行結果
 
